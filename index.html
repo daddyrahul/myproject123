@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Skill X project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: rgb(134, 176, 255); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: xx-large ;">Rahul's Skill X project</h1>
+
+        <!-- Video upload form -->
+        <form id="videoForm" enctype="multipart/form-data">
+            <label for="videoUpload" style="color: blue;"></label>
+            <input type="file" id="videoUpload" name="videoUpload" accept="video/*" required>
+
+            <label for="videoTitle " style="color: rgb(8, 92, 64);font-style: italic;">project title     </label>
+            <input type="text" id="videoTitle" name="videoTitle" placeholder="Enter video title" required>
+
+            <label for="videoDescription" style="color: darkblue; font-style: italic;">project details</label>
+            <textarea id="videoDescription" name="videoDescription" placeholder="Enter a short description" required></textarea>
+
+            <button type="submit" style="color: rgb(35, 10, 58); ">Upload</button>
+        </form>
+
+        <!-- Video preview -->
+        <div id="videoPreview" class="preview"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
